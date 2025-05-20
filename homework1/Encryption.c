@@ -20,6 +20,11 @@ char * caesar_cipher_encryption(char * plaintext, int plaintext_size, int key)
 char * affine_cipher_encryption(char * plaintext, int plaintext_size, int key1, int key2)
 {
     int i;
+    int key1_mod_inverse = mod_inverse(key1,26);
+    if(key1_mod_inverse == -1){
+        printf("key1과 26은 서로소여야 합니다.");
+        return NULL;
+    }
     for(i = 0; i < plaintext_size; i++){
         if((plaintext[i] >= 'A') && (plaintext[i] <= 'Z'))
         {

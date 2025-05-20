@@ -6,6 +6,7 @@
 #define INFORMATION_SECURITY_ENCRYPTION_H
 #include <stdio.h>
 #include <stdlib.h>
+#include "Calculate.h"
 char * caesar_cipher_encryption(char *, int, int);
 char * affine_cipher_encryption(char *, int, int, int);
 char * vigenere_cipher_encryption(char *, int, const char *, int);

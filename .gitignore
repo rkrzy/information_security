@@ -1,0 +1,40 @@
+# C/C++ object files
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.libs
+
+# Executables
+*.exe
+*.out
+*.app
+*.elf
+*.a
+*.so
+*.dll
+*.dylib
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# CLion IDE
+.idea/
+*.iml
+
+# Build directories (e.g., cmake-build-debug)
+cmake-build-*/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Core dumps
+core.*
